@@ -1,6 +1,10 @@
 const Discord = require("discord.js");
 const fs = require("fs");
 
+const commands = require("./commands");
+const rights = require("./rights");
+const meme = require("./meme");
+
 // Globals
 const bot = new Discord.Client();
 
@@ -49,8 +53,12 @@ bot.on("ready", () => {
     */
 
     // Load the commands to register the prefix
-    //commands.setPrefix(botPrefix);
+    commands.setPrefix(botPrefix);
+    // Load the commands here
+    rights.load();
+    meme.load();
 
+    commands.reg("help", commands.help, 2, "Lists all the available commands");
     // Register all commands with given prefix
     onReady = true;
 });
@@ -70,10 +78,7 @@ bot.on('message', msg => {
     if (msg.author.bot)
         return;
 
-    if(msg.content == botPrefix + 'ping')
-        msg.reply('pong');
-
-    //commands.process(msg);
+    commands.process(msg);
 });
 
 // Log in bot client

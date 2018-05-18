@@ -18,6 +18,8 @@
   "homepage": "https://github.com/00Zero0/Pizze#readme",
   "dependencies": {
     "discord.js": "^11.3.2",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "googleapis": "^30.0.0",
+    "jimp": "^0.2.28"
   }
 }
