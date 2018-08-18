@@ -8,6 +8,8 @@ Pizze is a memer bot for discord server
 - [discord.js](https://discord.js.org/)
 - [fs](https://www.npmjs.com/package/fs)
 - [jimp](https://github.com/oliver-moran/jimp)
+
+
 **Note:: you can run 'install.bat' in windows to install the node package**
 
 ## Files needed:
