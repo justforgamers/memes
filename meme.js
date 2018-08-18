@@ -223,6 +223,9 @@ module.exports = {
         addMeme('death-note-threat', [252, 86], [400, 256]);
 
         addNameMeme('death-note', [127, 2008]);
+
+        //addMeme('filename', [fx, fy], [fw, fh], [sx, sy], [sw, sh]);
+        //addNameMeme('filename', [x, y]);
     }
 
 }
