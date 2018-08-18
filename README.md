@@ -3,7 +3,7 @@ Pizze is a memer bot for discord server
 
 Here's a example of how the memes work (i.e by placing user's display profile in the meme)
 
-[Example Image](example.png)
+![Example Image](example.png)
 
 ## Dependencies
 - Node.js
